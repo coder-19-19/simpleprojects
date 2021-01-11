@@ -15,8 +15,55 @@
         ga('create', 'UA-XXXXX-Y', 'auto');
         ga('send', 'pageview');
         </script>
+    <style>
+            *{
+                padding: 0;
+                margin: 0;
+                outline: none;
+                text-decoration: none;
+                box-sizing: border-box;
+            }
+            body{
+                background:url("./img/background.png") no-repeat center fixed;
+
+            }
+            .container{
+                text-align: center;
+                margin: 12.5vh auto 0;
+                opacity: 0.3;
+            }
+            
+            a{
+                background-color: turquoise;
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 25px;
+                color:#fff;
+            }
+            .container:hover{
+                opacity: 1;
+                box-shadow: black ;
+            }
+            img{
+                display: inline-block;
+                border-radius: 10px;
+            }
+            #calculator{
+                margin: 10px 0;
+                display: inline-block;
+            }
+        </style>
 </head>
 <body>
-    <a href="calculator/index.html">Calculator</a>
+    <div class="container">
+        <div id="calculator">
+            <a href="calculator/index.html">Calculator</a></br>
+            <img src="./img/calculator.jpeg" alt="">
+        </div>
+        <div id="calculator">
+            <a href="calculator/index.html" >Calculator</a></br>
+            <img src="./img/calculator.jpeg" alt="">
+        </div>
+    </div>
 </body>
 </html>
