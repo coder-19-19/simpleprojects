@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Simple Calculator</title>
+  <meta name="description" content="Simple Calculator"/>
+  <meta name="keywords" content="azcodestudio,simple calculator">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="light.css" id="theme" />
+</head>
+<body>
+  
+    <div class="container">
+      <h1>Simple Calculator</h1>
+      <div class="first-row">
+        <input required type="text" name="result" class="result" id="result" placeholder="0" readonly />
+        <input type="button" value="C"  class="clear" id="clear" />
+      </div>
+      <div class="second-row">
+        <input type="button" value="7" onclick="writeResult(7)"/>
+        <input type="button" value="8" onclick="writeResult(8)"  />
+        <input type="button" value="9" onclick="writeResult(9)"  />
+        <input type="button" value=&#43; onclick="writeResult('+')"  />
+      </div>
+      <div class="third-row">
+        <input type="button" value="4" onclick="writeResult(3)" />
+        <input type="button" value="5" onclick="writeResult(4)" />
+        <input type="button" value="6" onclick="writeResult(5)"  />
+        <input type="button" value=&#8722; onclick="writeResult('-')" />
+      </div>
+      <div class="fourth-row">
+        <input type="button" value="1" onclick="writeResult(1)" />
+        <input type="button" value="2" onclick="writeResult(2)" />
+        <input type="button" value="3" onclick="writeResult(3)"  />
+        <input type="button" value=&#215; onclick="writeResult('*')"  />
+      </div>
+      <div class="fifth-row">
+        <input type="button" value="0" onclick="writeResult(0)" />
+        <input type="button" value="." onclick="writeResult('.')" />
+        <input type="button" value=&#247; onclick="writeResult('/')"  />
+        <input type="button" value=&#61; onclick="equal()" />
+      </div>
+      <div class="bottom-buttons">
+        <button id="dark-mode">
+          Dark Mode 🌙
+        </button>
+        <button id="azcodestudio">
+           <a href="https://www.instagram.com/azcodestudio" target="_blank">AzCodeStudio</a>
+        </button>
+        <button id="azcodestudio">
+            <a href="https://www.instagram.com/fermanallahverdiev" target="_blank">Coder</a>
+        </button>
+      </div>
+    </div>
+  <script src="https://kit.fontawesome.com/f28b055962.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
