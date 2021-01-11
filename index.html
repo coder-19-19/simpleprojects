@@ -32,7 +32,6 @@
             .container{
                 text-align: center;
                 margin: 12.5vh auto 0;
-                opacity: 0.3;
             }
             
             a{
@@ -42,17 +41,17 @@
                 font-size: 25px;
                 color:#fff;
             }
-            .container:hover{
-                opacity: 1;
-                box-shadow: black ;
-            }
             img{
                 display: inline-block;
                 border-radius: 10px;
             }
-            #calculator{
+            .projects{
                 margin: 10px 0;
                 display: inline-block;
+                opacity: 0.3;
+            }
+            .projects:hover{
+                opacity: 1;
             }
             #loader{
                 text-align: center;
@@ -67,14 +66,15 @@
         <img src="/img/loader.gif.gif">
     </div>
     <div class="container">
-        <div id="calculator">
+        <div class="projects">
             <a href="calculator/index.html">Calculator</a></br>
             <img src="./img/calculator.jpeg" alt="">
         </div>
-        <div id="calculator">
+        <div class="projects">
             <a href="calculator/index.html" >Calculator</a></br>
             <img src="./img/calculator.jpeg" alt="">
         </div>
+        
     </div>
     <script>
         window.addEventListener("load", function(){
