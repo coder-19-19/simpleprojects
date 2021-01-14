@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+  }
+  
+  body {
+    background-color: rgb(20, 19, 19);
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+  }
+  h1 {
+    margin-top: 25vh;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #fff;
+  }
+  .container {
+    width: 370px;
+    text-align:center;
+    margin-left:auto; 
+    margin-right:auto;
+  }
+  .result {
+    width: 59.1%;
+    cursor: auto;
+  }
+  input {
+    padding: 25px;
+    color: transparent;
+    font-size: 1em;
+    cursor: pointer;
+    width: 70px;
+    background-color: rgb(47, 51, 50);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+
+}
+  
+  .first-row,
+  .second-row,
+  .third-row,
+  .fourth-row,
+  .fifth-row {
+    margin-bottom: 3px;
+  }
+  input[type="text"] {
+    background-color: rgb(47, 51, 50);
+  }
+  input[type="button"]:hover {
+    background-color: rgb(160, 160, 160);
+    color: transparent;
+  }
+  .clear {
+    color: #fff;
+    background-color: rgb(255, 42, 42);
+  }
+  button {
+    border: none;
+    background-color: rgb(39, 36, 36);
+    padding: 10px;
+    color: white;
+    margin: 2px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .bottom-buttons {
+    float: left;
+    margin-left: 10%;
+    margin-top: 0.7%;
+  }
+  
+  @media (max-width: 640px) {
+    h1 {
+      margin-top: 15vh;
+      margin-bottom: 1vh;
+    }
+  }
+
+
+
+  .player{
+    margin: 0 20px;
+    color:white;
+  }
+  .header{
+    margin: 10px;
+  }
+  .fa{
+    margin: 10px 3px;
+    cursor: pointer;
+    color:white;
+    font-size: 25px;
+  }
+  .win{
+    display: none;
+    color:green;
+    border:2px green solid;
+    padding: 3px;
+    width: 70px;
+    text-align: center;
+    margin:2px auto;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
