@@ -1,88 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="azcodestudio">
+    <meta name="description" content="SimpleProjects">
     <meta name="keywords" content="azcodestudio,simple calculator,calculator">
     <title>Simple Projects</title>
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
         ga('create', 'UA-XXXXX-Y', 'auto');
         ga('send', 'pageview');
-        </script>
+    </script>
     <style>
-            <style>
-            *{
-                padding: 0;
-                margin: 0;
-                outline: none;
-                text-decoration: none;
-                box-sizing: border-box;
-            }
-            body{
-                background:url("./img/background.png") no-repeat center fixed;
-                display: none;
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            outline: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+        body{
+            background-color: turquoise;
+        }
 
-            }
-            .container{
-                text-align: center;
-                margin: 12.5vh auto 0;
-            }
-            
-            a{
-                background-color: turquoise;
-                padding: 5px;
-                border-radius: 5px;
-                font-size: 25px;
-                color:#fff;
-            }
-            img{
-                display: inline-block;
-                border-radius: 10px;
-            }
-            .projects{
-                margin: 10px 0;
-                display: inline-block;
-                opacity: 0.3;
-            }
-            .projects:hover{
-                opacity: 1;
-            }
-            #loader{
-                text-align: center;
-                margin: 25vh auto 0;
-                width: 320px;
-                height: 40px;
-            }
-        </style>
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 10px;
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+
+
+}
+     
+.teams .carousel .card:hover{
+    background: blue;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid blue;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.works{
+    color: white !important;
+}
+.works:visited{
+    color: white !important;
+}
+
+    </style>
 </head>
+
 <body>
-    <div id="loader">
-        <img src="/img/loader.gif.gif">
-    </div>
-    <div class="container">
-        <div class="projects">
-            <a href="calculator/index.html">Calculator</a></br>
-            <img src="./img/calculator.jpeg" alt="">
+
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Şəkillərə toxunaraq həmin işlərə gedə bilərsiniz</h2>
+            <div class="carousel owl-carousel">
+                <a href="https://simpleprojects.netlify.app/calculator" class="works">
+                    <div class="card">
+                        <div class="box">
+                            <img src="img/calculator.jpeg">
+                            <div class="text">
+                                Calculator</div>
+                            <p>
+                                Sadə əməlləri yerinə yetirən kalkulyator
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://simpleprojects.netlify.app/tictactoe" class="works">
+                    <div class="card">
+                        <div class="box">
+                            <img src="img/tictactoe.jpeg">
+                            <div class="text">
+                                Calculator</div>
+                            <p>
+                                Sadə əməlləri yerinə yetirən kalkulyator
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="projects">
-            <a href="calculator/index.html" >Calculator</a></br>
-            <img src="./img/calculator.jpeg" alt="">
-        </div>
-        
-    </div>
+    </section>
     <script>
-        window.addEventListener("load", function(){
-            const loader = document.querySelector("#loader")
-            const container = document.querySelector(".container")
-            loader.style.display = "none"
-            document.querySelector("body").style.display = "block"    
-})
+
+
     </script>
 </body>
+
 </html>
